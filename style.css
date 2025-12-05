@@ -1,0 +1,76 @@
+html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+}
+
+.container {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      color:white;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      grid-template-rows: 1.4fr 2fr 1.2fr 2fr;
+      grid-template-areas: 
+      "red orange yellow"
+      "green green blue"
+      "indigo violet violet"
+      "black black black";
+      grid-gap: 1%;
+
+      /* You will need to add more to this .container as well */
+}
+
+#red {
+      grid-area: red;
+      background-color: red;
+      outline: solid black;
+}
+
+#orange {
+      grid-area: orange;
+      background-color: orange;
+      outline: solid black;
+}
+
+#yellow {
+      grid-area: yellow;
+      background-color: yellow;
+      outline: solid black;
+}
+
+#green {
+      grid-area: green;
+      background-color: green;
+      outline: solid black;
+}
+
+#blue {
+      grid-area: blue;
+      background-color: blue;
+      outline: solid black;
+}
+
+#indigo {
+      grid-area: indigo;
+      background-color: indigo;
+      outline: solid black;
+}
+
+#violet {
+      grid-area: violet;
+      background-color: violet;
+      outline: solid black;
+}
+
+#black {
+      grid-area: black;
+      background-color: black;
+      outline: solid black;
+}
+
+.container div {
+      display: grid;
+      place-items: center;
+}
